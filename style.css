@@ -1,0 +1,347 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fff;
+color:#111;
+overflow-x:hidden;
+}
+
+.topbar{
+background:#8b0000;
+color:#fff;
+padding:10px;
+display:flex;
+justify-content:space-around;
+font-size:14px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 5%;
+background:#fff;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#8b0000;
+}
+
+.navlinks{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.navlinks a{
+text-decoration:none;
+color:#111;
+font-weight:500;
+}
+
+.btn{
+padding:14px 24px;
+border-radius:12px;
+display:inline-block;
+text-decoration:none;
+transition:0.3s;
+font-weight:600;
+}
+
+.primary{
+background:#8b0000;
+color:#fff;
+}
+
+.primary:hover{
+background:#a40000;
+transform:translateY(-3px);
+}
+
+.secondary{
+border:1px solid #ccc;
+color:#111;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+padding:90px 5%;
+background:#fafafa;
+}
+
+.hero h1{
+font-size:64px;
+line-height:1.1;
+}
+
+.hero span{
+color:#8b0000;
+}
+
+.hero p{
+margin:30px 0;
+line-height:1.9;
+font-size:18px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+}
+
+.hero-image img{
+width:100%;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,0.12);
+}
+
+.hero-stats{
+display:flex;
+gap:30px;
+margin-top:35px;
+}
+
+.hero-stats div{
+display:flex;
+flex-direction:column;
+}
+
+.hero-stats strong{
+font-size:28px;
+color:#8b0000;
+}
+
+.logo-strip{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+padding:35px;
+flex-wrap:wrap;
+}
+
+.logo-strip img{
+height:50px;
+transition:0.3s;
+}
+
+.logo-strip img:hover{
+transform:scale(1.08);
+}
+
+.marquee-wrap{
+background:#8b0000;
+color:#fff;
+padding:16px 0;
+overflow:hidden;
+}
+
+.marquee{
+white-space:nowrap;
+overflow:hidden;
+}
+
+.track{
+display:inline-block;
+animation:scroll 25s linear infinite;
+font-weight:600;
+}
+
+.reverse .track{
+animation-direction:reverse;
+}
+
+.services{
+padding:90px 5%;
+text-align:center;
+}
+
+.services h2{
+font-size:46px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 5px 25px rgba(0,0,0,0.08);
+transition:0.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px 20px 10px;
+color:#8b0000;
+}
+
+.card p{
+padding:0 20px 25px;
+line-height:1.7;
+}
+
+.business{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+padding:90px 5%;
+background:#fafafa;
+}
+
+.business img{
+width:100%;
+border-radius:22px;
+}
+
+.business h2{
+font-size:42px;
+margin-bottom:25px;
+}
+
+.business p{
+line-height:1.9;
+margin-bottom:25px;
+}
+
+.business ul{
+padding-left:20px;
+margin-bottom:30px;
+line-height:2;
+}
+
+.claims{
+padding:90px 5%;
+text-align:center;
+}
+
+.claims h2{
+font-size:44px;
+margin-bottom:20px;
+}
+
+.claims p{
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.claims img{
+width:100%;
+max-width:1000px;
+border-radius:22px;
+}
+
+.leadform{
+padding:90px 5%;
+background:#fafafa;
+}
+
+.formbox{
+max-width:700px;
+margin:auto;
+background:#fff;
+padding:45px;
+border-radius:25px;
+box-shadow:0 5px 25px rgba(0,0,0,0.08);
+}
+
+.formbox h2{
+margin-bottom:25px;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+input,textarea,select{
+padding:16px;
+border-radius:12px;
+border:1px solid #ddd;
+font-family:'Poppins',sans-serif;
+}
+
+footer{
+background:#111;
+color:#fff;
+padding:60px 5%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.fade{
+animation:fadeup 1s ease;
+}
+
+@keyframes scroll{
+0%{transform:translateX(100%);}
+100%{transform:translateX(-100%);}
+}
+
+@keyframes fadeup{
+0%{opacity:0;transform:translateY(30px);}
+100%{opacity:1;transform:translateY(0);}
+}
+
+@media(max-width:900px){
+
+.hero,
+.business{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.navlinks{
+display:none;
+}
+
+.topbar{
+flex-direction:column;
+gap:5px;
+text-align:center;
+}
+
+.hero-stats{
+flex-wrap:wrap;
+}
+
+}
