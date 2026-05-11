@@ -1,4 +1,3 @@
-
 *{
 margin:0;
 padding:0;
@@ -10,6 +9,7 @@ font-family:'Poppins',sans-serif;
 background:#fff;
 color:#111;
 overflow-x:hidden;
+max-width:100%;
 }
 
 .topbar{
@@ -80,13 +80,13 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:50px;
 align-items:center;
-padding:90px 5%;
+padding:70px 5%;
 background:#fafafa;
 }
 
 .hero h1{
-font-size:64px;
-line-height:1.1;
+font-size:52px;
+line-height:1.15;
 }
 
 .hero span{
@@ -106,6 +106,8 @@ gap:15px;
 
 .hero-image img{
 width:100%;
+max-height:520px;
+object-fit:cover;
 border-radius:25px;
 box-shadow:0 10px 35px rgba(0,0,0,0.12);
 }
@@ -114,6 +116,7 @@ box-shadow:0 10px 35px rgba(0,0,0,0.12);
 display:flex;
 gap:30px;
 margin-top:35px;
+flex-wrap:wrap;
 }
 
 .hero-stats div{
@@ -130,13 +133,20 @@ color:#8b0000;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:40px;
+gap:25px;
 padding:35px;
 flex-wrap:wrap;
+background:#fff;
 }
 
 .logo-strip img{
-height:50px;
+height:45px;
+max-width:140px;
+object-fit:contain;
+padding:10px;
+background:#fff;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 transition:0.3s;
 }
 
@@ -196,8 +206,9 @@ transform:translateY(-10px);
 
 .card img{
 width:100%;
-height:240px;
+height:220px;
 object-fit:cover;
+display:block;
 }
 
 .card h3{
@@ -221,6 +232,8 @@ background:#fafafa;
 
 .business img{
 width:100%;
+max-height:500px;
+object-fit:cover;
 border-radius:22px;
 }
 
@@ -257,7 +270,9 @@ line-height:1.8;
 
 .claims img{
 width:100%;
-max-width:1000px;
+max-width:900px;
+max-height:500px;
+object-fit:cover;
 border-radius:22px;
 }
 
@@ -342,6 +357,11 @@ text-align:center;
 
 .hero-stats{
 flex-wrap:wrap;
+}
+
+.logo-strip img{
+max-width:120px;
+height:40px;
 }
 
 }
